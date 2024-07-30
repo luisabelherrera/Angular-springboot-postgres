@@ -1,0 +1,64 @@
+
+.grid-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+.compact-list-item {
+  padding: 0;
+  margin-bottom: 8px;
+  width: 100%; 
+}
+
+.compact-card {
+  padding: 8px;
+  margin: 0;
+  width: 100%;
+}
+
+mat-card-header {
+  display: flex;
+  align-items: center;
+}
+
+mat-card-title {
+  font-size: 1.2em;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .grid-container {
+    flex-direction: column; 
+  }
+  
+  mat-card-title {
+    font-size: 1em;
+  }
+  
+  .buttons-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  mat-card-title {
+    font-size: 0.9em; 
+  }
+  
+  .compact-list-item {
+    margin-bottom: 4px; 
+  }
+}

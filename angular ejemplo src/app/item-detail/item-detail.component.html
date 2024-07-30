@@ -1,0 +1,6 @@
+<h2>{{ item.id ? 'Edit' : 'Add' }} Item</h2>
+<form (ngSubmit)="save()">
+  <label for="name">Name:</label>
+  <input id="name" [(ngModel)]="item.name" name="name" required>
+  <button type="submit">Save</button>
+</form>

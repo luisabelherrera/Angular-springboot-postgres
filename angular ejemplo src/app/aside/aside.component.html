@@ -1,0 +1,27 @@
+
+<mat-sidenav-container class="sidenav-container">  
+  
+  <mat-sidenav #sidenav mode="side" opened>
+
+    <mat-nav-list>
+   <button  style="left: 70%;"   mat-icon-button (click)="sidenav.close()" class="close-button">
+      <mat-icon>close</mat-icon>
+    </button>
+      <a mat-list-item routerLink="/items">Alumno</a>
+      <a mat-list-item routerLink="/items/new">Profesor</a>
+      <a mat-list-item routerLink="#">Matricula</a>
+      <a mat-list-item routerLink="#">Periodo</a>
+      <a mat-list-item routerLink="#">Periodo</a>
+    </mat-nav-list>
+
+  
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+
+    <button mat-icon-button (click)="sidenav.open()" class="open-button">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
